@@ -11,7 +11,7 @@ class Team extends Model
 
     public function players()
     {
-        return $this->hasMany(Player::class);
+        return $this->hasMany(Player::class)->orderBy('updated_at', 'asc');
     }
 
     public function getSpentAttribute()

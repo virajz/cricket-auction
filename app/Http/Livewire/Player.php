@@ -22,7 +22,7 @@ class Player extends Component
 
     public function updatedPoints()
     {
-        ModelsPlayer::whereId($this->player->id)->update(['points' => $this->points ?: null]);
+        ModelsPlayer::whereId($this->player->id)->update(['points' => $this->points ?: 0]);
     }
 
     public function updatedTeam()

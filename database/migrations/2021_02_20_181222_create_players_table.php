@@ -17,7 +17,7 @@ class CreatePlayersTable extends Migration
             $table->id();
             $table->string('name');
             $table->unsignedInteger('team_id')->nullable();
-            $table->integer('points')->nullable();
+            $table->integer('points')->default(0);
             $table->timestamps();
         });
     }
