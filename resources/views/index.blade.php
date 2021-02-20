@@ -69,7 +69,7 @@
 					<table>
 						@foreach($team->players as $key => $player)
 							<tr>
-								<td>{{ $key + 1 }}</td>
+								<td width="50px">{{ $key + 1 }}</td>
 								<td>{{ $player->name }}</td>
 								<td class="points">{{ $player->points }}</td>
 							</tr>

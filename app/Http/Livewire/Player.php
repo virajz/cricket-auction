@@ -10,7 +10,7 @@ class Player extends Component
     public $player;
     public $teams;
     public $points;
-    public $team    = 0;
+    public $team;
 
     public function mount($player, $teams)
     {
@@ -22,12 +22,12 @@ class Player extends Component
 
     public function updatedPoints()
     {
-        ModelsPlayer::whereId($this->player->id)->update(['points' => $this->points]);
+        ModelsPlayer::whereId($this->player->id)->update(['points' => $this->points ?: null]);
     }
 
     public function updatedTeam()
     {
-        ModelsPlayer::whereId($this->player->id)->update(['team_id' => $this->team]);
+        ModelsPlayer::whereId($this->player->id)->update(['team_id' => $this->team != 0 ? $this->team : null]);
     }
 
     public function render()
