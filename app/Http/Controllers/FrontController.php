@@ -14,6 +14,12 @@ class FrontController extends Controller
         return view('index', compact('teams'));
     }
 
+    public function players()
+    {
+        $players = Player::with('team')->orderBy('name', 'asc')->get();
+        return view('players', compact('players'));
+    }
+
     public function manage()
     {
         $players = Player::orderBy('name', 'asc')->get();
