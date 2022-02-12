@@ -104,12 +104,11 @@
         @endforeach
     </section>
     @livewireScripts
-    {{-- <script type="text/javascript">
-			setTimeout(function(){
-				location = ''
-			}, 30000);
-		</script> --}}
-
+    <script type="text/javascript">
+        setTimeout(function() {
+            location = ''
+        }, 30000);
+    </script>
 </body>
 
 </html>
