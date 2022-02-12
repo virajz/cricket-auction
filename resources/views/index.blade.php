@@ -15,17 +15,31 @@
             box-sizing: border-box;
         }
 
+        body {
+            position: relative;
+        }
+
         nav {
-            padding: 1rem 2rem;
+            padding: 1rem 0;
             text-align: right;
+            max-width: 675px;
+            margin: 0 auto;
+            /* position: sticky;
+            height: 50px;
+            top: 0;
+            background: #fff; */
         }
 
         section {
+            max-width: 675px;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 50vh);
+            /* grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 50vh); */
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
             column-gap: 2rem;
             row-gap: 2rem;
+            margin: 0 auto;
         }
 
         .team {
