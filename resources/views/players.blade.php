@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Shreemali Box Cricket Championship</title>
+    <title>Shreemali Cricket League - Season 2</title>
     <!-- Fonts -->
     <style>
         * {
