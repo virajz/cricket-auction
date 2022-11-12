@@ -57,12 +57,12 @@ class SixTeamsSeeder extends Seeder
         Player::create(['name' => 'MALAY SHAH (MUMBAI)']);
         Player::create(['name' => 'MANAN DAMANIA']);
         Player::create(['name' => 'MANTHAN SHAH']);
+        Player::create(['name' => 'OJAS JHAVERI']);
         Player::create(['name' => 'PINAL SHAH']);
         Player::create(['name' => 'PREMAL LAKDAWALA']);
         Player::create(['name' => 'RAJU JHAVERI']);
         Player::create(['name' => 'RISHIL SHAH']);
         Player::create(['name' => 'ROHAN KAJI']);
-        Player::create(['name' => 'ROMIL CHOKSI']);
         Player::create(['name' => 'RUSHABH KACHRA']);
         Player::create(['name' => 'SAMARTH DAMANIA']);
         Player::create(['name' => 'SAUMIL ZAVERI']);
