@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontController::class, 'index']);
-Route::get('/manage', [FrontController::class, 'manage']);
+Route::get('control-panel', [FrontController::class, 'manage']);
 Route::get('/players', [FrontController::class, 'players']);
